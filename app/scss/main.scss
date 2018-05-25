@@ -5,5 +5,9 @@
     align-items: center;
 }
 
+p {
+    color: --primary;
+}
+
 // Import all of Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";

@@ -1,6 +1,9 @@
 .container {
   align-items: center; }
 
+p {
+  color: --primary; }
+
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
