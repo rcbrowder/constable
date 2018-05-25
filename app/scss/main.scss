@@ -1,7 +1,9 @@
 // Import the things we need, like Google fonts
 
 // Change Bootstrap variables
-
+.container {
+    align-items: center;
+}
 
 // Import all of Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";
