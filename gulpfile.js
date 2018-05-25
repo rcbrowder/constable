@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var preprocess = require('gulp-preprocess');
 
 gulp.task('copycss', function() {
 	return gulp.src('app/css/**/*.css')
@@ -13,6 +14,12 @@ gulp.task('sass', function() {
 });
 
 gulp.task('copy', function() {
-    return gulp.src('app/**/*.html')
+    return gulp.src('app/**/*+(.html|.js|.scss)')
     .pipe(gulp.dest('dist/'))
+});
+
+gulp.task('scripts', function() {
+  gulp.src(['./app/js/*.js'])
+    .pipe(preprocess())
+    .pipe(gulp.dest('dist/js'))
 });
