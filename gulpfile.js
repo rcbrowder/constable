@@ -13,6 +13,6 @@ gulp.task('sass', function() {
 });
 
 gulp.task('copy', function() {
-    return gulp.src('app/**/*')
+    return gulp.src('app/**/*.html')
     .pipe(gulp.dest('dist/'))
 });
