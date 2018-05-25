@@ -11,3 +11,8 @@ gulp.task('sass', function() {
 		.pipe(sass())
 		.pipe(gulp.dest('dist/css/'))
 });
+
+gulp.task('copy', function() {
+    return gulp.src('app/**/*')
+    .pipe(gulp.dest('dist/'))
+});
